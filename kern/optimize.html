@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Optimize Legibility Demo</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Cabin:bold' rel='stylesheet' type='text/css'>
+	
+	<style type="text/css">
+		body {font-size: 100%; background-color: #061722; color: #EBE0C9;}
+		ul {margin: 0; padding: 0;}
+		li {list-style: none; font-size: 4em;}
+		#wrap {margin: 0 auto; width: 800px; line-height: 1.5; font-family: 'Helvetica Neue', Arial, Helvetica;}
+		h1 {text-align: center; color: #FF628C;}
+		h2 {color: #6F767E;}
+		h1, h2 {font-weight: 300;}
+		#normal {float: left; width: 45%;}
+		#optimized {text-rendering: optimizeLegibility; float: right; width: 45%;}
+		.group:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+		.group { display: inline-block; }
+		* html .group { height: 1%; } /* Hides from IE-mac \*/
+		.group { display: block; margin-bottom: 4em;}
+		a, a:visited {color: #FF628C; text-decoration: none;}
+		a:hover {border-bottom: 1px dashed #FF628C; }
+		span.kern:hover {color: #FF628C;}
+	</style>
+	
+</head>
+
+<body>
+
+<div id="wrap">
+	<h1>Automagic Kerning with OptimizeLegibility</h1>
+
+<div class="group">
+	<div id="normal">
+	<h2>Default</h2>
+	<ul>
+		<li>Yonkers</li>
+		<li>Trust</li>
+		<li>Top</li>
+		<li>AVAIL</li>
+	</ul>
+	</div>
+
+<div id="optimized">
+	<h2>Optimized Legibility</h2>
+	<ul>
+		<li><span class="kern">Yo</span>nkers</li>
+		<li><span class="kern">Tr</span>ust</li>
+		<li><span class="kern">To</span>p</li>
+		<li><span class="kern">AVA</span>IL</li>
+	</ul>
+	</div>
+</div>
+
+<a href="http://adamdscott.com/typography/kerning-for-the-web/">&#8592; Back to the article</a>
+
+</div>
+</body>
+</html>

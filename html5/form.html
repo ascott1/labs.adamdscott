@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Form Demo</title>
+    <meta charset='utf-8'>
+	<link rel="stylesheet" href="form.css">
+  </head>
+
+<body>
+		<h1>Sample Form</h1>
+  		 
+		<form id="sample-form" method="post" action="">
+		<fieldset>  
+
+		<label for="name">Name</label>
+		<input type="text" name="name" placeholder="Full Name" autofocus>
+ 	   
+		<label for="email">E-mail</label>
+		<input type="email" name="email" placeholder="name@domain.com" required>
+ 
+		<label for="phone">Phone</label>
+		<input type="tel" name="phone" placeholder="ex. (555) 555-5555">
+ 
+		<label for="website">Website</label>
+		<input type="url" name="url" placeholder="http://">
+		
+		<label for="amount">How much?</label>
+		<input id="amount" name="amount" type="range">
+ 
+ 	    <label for="amount">Start date</label>
+		<input id="dstart" name="dstart" type="date">
+		
+		<p><input type="submit" name="submit" id="submit" value="Send Message" /></p>
+ 
+		</fieldset>
+		</form>
+</body>
+</html>

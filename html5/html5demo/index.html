@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+  	<title>HTML5 Demo</title>
+	<link rel="stylesheet" href="resources/style.css">
+</head>
+	
+<body>
+	
+  <header>
+    <h1>HTML5 Demo Page</h1>
+    <nav>
+      <ul>
+        <li><a href="">Nav Link 1</a></li>
+        <li><a href="">Nav Link 2</a></li>
+        <li><a href="">Nav Link 3</a></li>
+      </ul>
+    </nav>		
+  </header>
+  
+ <div id="content" role="main">
+  <article>
+    <h1>Basic Article</h1>
+    <p>This is a basic article. This <mark>HTML5</mark> demo was presented at Launch Haven on <time datetime="2012-02-16T19:00+00:00">February 16th</time>.</p>
+  </article>
+  
+  <article>
+    <h1>Figure &amp; Figcaption</h1>
+	<figure>
+	  <img src="resources/bley.jpg" />
+	  <figcaption>Paul Bley Trio ESP-Disk 1021, 1966</figcaption>
+	</figure>
+  </article>
+  
+  <article>
+	  <h1>Audio</h1>
+	  <audio controls preload="auto"> 
+	    <source src="resources/honeycombs.mp3" />
+	    <source src="resources/honeycombs.ogg" />
+	    <!-- now include flash fall back -->
+	  </audio>
+	  <p>&ldquo;Honeycombs&rdquo; by <a href="http://www.zsammy.com">Zsammy</a></p>
+  </article>
+  
+  <article>
+	  <h1>Video</h1>
+	  	<video controls>
+	      <source src="resources/marble.m4v" type="video/mp4">
+		  <source src="resources/marble.ogv" type="video/ogg">
+			   Video tag not supported. Download the video <a href="resources/marble.m4v">here</a>.
+		</video>
+  </article>
+
+  
+ <article>
+  <h1>Forms</h1>
+<form id="sample-form">
+<fieldset>  
+
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Full Name" required>
+ 	   
+<label for="email">E-mail</label>
+<input type="email" name="email" id="email" placeholder="name@example.com" required>
+ 
+<label for="phone">Phone</label>
+<input type="tel" name="phone" id="phone" placeholder="ex. (555) 555-5555">
+ 
+<label for="website">Website</label>
+<input type="url" name="url" id="website" placeholder="http://">
+		
+<label for="amount">How much?</label>
+<input id="amount" name="amount" type="range">
+ 
+   <label for="dstart">Start date</label>
+<input id="dstart" name="dstart" type="date">
+		
+<p><input type="submit" name="submit" id="submit" value="Send Message" /></p>
+ 
+</fieldset>
+</form>
+	  
+ </article>
+ 
+
+  
+  
+ </div> <!-- end main content div-->
+
+  <aside>
+    <h1>Aside Sidebar</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </aside>
+  
+  <footer>
+    <p><small><abbr>HTML5</abbr> Demo by <a href="http://adamdscott.com">Adam D. Scott</a>. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.</small></p>
+  </footer>
+
+</body>

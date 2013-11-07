@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5</title>
+
+    <meta charset='utf-8'>
+    <script src="slides.js"></script>
+	<style type="text/css" src="scott.css"></style>
+  </head>
+    <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      <article>
+        <h1 id="title-slide">&#60;HTML<span class="color">5</span>&#62;</h1>
+      </article>
+      <article>
+		<h1>@adam<span class="color">d</span>scott</h1>
+		<h2>educator, designer, digital book developer, author</h2>
+      </article>
+	  <article>
+		  <h1>Before we get started</h1>
+		  <h2>Links, resources and demo files:
+		  <a href="http://adamdscott.com/wrote-about/html5-crash-course/">adamdscott.com</a></h2>
+	  </article>
+      <article>
+        <h1 id="title-slide">&#60;HTML<span class="color">5</span>&#62;</h1>
+      </article>
+      <article>
+		<h1>HTML5 <em>!=</em> <br/></h1>
+		<p>HTML5 + CSS3 + JavaScript</p>
+      </article>
+      <article>
+		<h1>HTML5 <em>=</em> <br/></h1>
+		<p>Simplified Structure + New Elements + APIs</p>
+      </article>
+	  <article class='fill'>
+	    <h3>“Pave the Cowpaths”</h3>
+	     <p>
+	         <img src='images/cow.jpg'>
+	     </p>
+	     <div class='source white'>
+	          Source: http://www.flickr.com/photos/heyitsgarrett/
+	     </div>
+	   </article>
+      <article>
+		<h1>Simplify</h1>
+      </article>
+	  <article>
+		  <h3>The doctype</h3>
+		  <div class="build">
+	     <h4>HTML5</h4>
+	     <pre>&#60;!DOCTYPE html&#62;</pre>
+		  <hr />
+		  <h4>HTML 4.01</h4>
+		  <pre>&#60;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" <br /> "http://www.w3.org/TR/html4/strict.dtd"&#62;</pre>
+		  <hr />
+		  <h4>XHTML 1.0</h4>
+		  <pre>&#60;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" <br /> "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&#62;</pre>
+		  </div>
+	  </article>
+	  
+	  <article>
+		  <h3>Character encoding</h3>
+		  <h4>HTML5</h4>
+		  <pre>&#60;meta charset=“utf-8”&#62;</pre>
+		  <hr />
+		  <h4>HTML 4.01</h4>
+		  <pre>&#60;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&#62;</pre>
+		  <hr />
+		  <h4>XHTML 1.0</h4>
+		  <pre>&#60;?xml version="1.0" encoding="UTF-8"?&#62;
+&#60;meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" /&#62;</pre>
+	  </article>
+	  
+	  <article>
+	  		<h3>Resource Linking</h3>
+		    <h4>HTML5</h4>
+			<pre>&#60;link rel="stylesheet" href="css/style.css"&#62;
+&#60;script src="file.js"&#62;&#60;/script&#62;</pre>
+			<hr />
+	  		  <h4>HTML 4.01 &amp; XHTML1.0</h4>
+	  		  <pre>
+&#60;link type="text/css" rel="stylesheet" href="css/style.css"&#62;
+&#60;script type="text/javasscript" src="file.js"&#62;&#60;/script&#62;</pre>	 	  
+	  </article>
+	  
+	  <article>
+		  <h3>Simplified document head</h3>
+		  <pre>
+&#60;!doctype html&#62;
+&#60;html lang="en"&#62; 
+&#60;head&#62;
+  &#60;meta charset="utf-8"&#62;
+  &#60;title>Document Title&#60;/title&#62;
+  &#60;link rel="stylesheet" href="css/style.css"&#62;
+  &#60;script src="file.js"&#62;&#60;/script&#62;
+&#60;head&#62;</pre>
+	  </article>
+	  
+	  <article>
+		  <h1>New Elements</h1>
+	  </article>
+	  <article>
+		  <h3>Structural Elements</h3>
+		  <figure>
+			  <img src="images/structure.gif" />
+		  <figcaption>Image by <a href="http://www.flickr.com/photos/ww4f/">Jon Gosier</a></figcaption>
+		  </figure>
+		  <hr />
+		  <h4>HTML5 Shiv</h4>
+		  <p><a href="http://code.google.com/p/html5shiv/">code.google.com/p/html5shiv/</a></p>
+	  </article>
+	  <article>
+		  <h3><a href="html5demo/index.html">Demo Page</a></h3>
+		  <figure><img src="images/screenshot.png" />
+	  </article>
+	  
+	  <article>
+		  <h3>Header &amp; Nav</h3>
+<pre>
+ &lt;header&gt;
+  &lt;h1&gt;&lt;a href=&quot;/&quot;&gt;Page Title&lt;/a&gt;&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Nav Link 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Nav Link 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;&quot;&gt;Nav Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;		
+ &lt;/header&gt;	
+</pre>
+	  </article>
+	  <article>
+		  <h3>Article, Aside, &amp; Footer</h3>
+<pre>
+&lt;article&gt;
+  &lt;h1&gt;Article Header&lt;/h1&gt;
+  &lt;p&gt;Etiam pretium odio eu mi convallis vitae varius
+  neque pharetra. Nulla vestibulum nisi ut sem cursus sed 
+  mattis nisi egestas.&lt;/p&gt;
+
+  &lt;h2&gt;Article Subhead&lt;/h2&gt;
+  &lt;p&gt;Vestibulum lacus erat, volutpat vel dignissim
+  at, fringilla ut felis.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;aside&gt;
+  &lt;h2&gt;Sidebar Content&lt;/h2&gt;
+&lt;/aside&gt;
+	
+&lt;footer&gt;
+  &lt;p&gt;&lt;small&gt;&amp;copy; Copyright 2012. All Rights Reserved.&lt;/small&gt;&lt;/p&gt;
+&lt;/footer&gt;
+</pre>
+		  
+	  </article>
+	  
+	  <article>
+		  <h3>Article</h3>
+	  <blockquote>&ldquo;The article element represents a component of a page that consists of a self-contained composition in a document, page, application, or site and that is intended to be independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.&rdquo;
+	  <footer>— <a href="http://www.w3.org/TR/html5/semantics.html#the-article-element">W3C Specification</a></footer>
+	  </blockquote>
+	  </article>
+	  <article>
+		  <h3>Section</h3>
+		  <blockquote>&ldquo;Section is a blob of content that you could store as an individual record in a database.&rdquo; 
+			  <footer>-<a href="http://html5doctor.com/the-section-element/">HTMl5 Doctor</a></footer></blockquote>
+
+<pre>
+&lt;section&gt;
+  &lt;h1&gt;Any level of heading&lt;/h1&gt;
+  rest of the content
+&lt;/section&gt;
+</pre>
+	 </article>	  
+	  <article>
+		  <h3>Article vs. Section</h3>
+		  <blockquote>
+			  &ldquo;(T)he only thing that distinguishes the definition of article from the definition of section is the presence of the phrase “self-contained”. A section groups together thematically-related content. An article groups together self-contained thematically-related content. That distinction is too fine to warrant a separate element, in my opinion.&rdquo;
+		  <footer>— Jeremy Keith</footer>
+		  </blockquote>
+		  <h4>Recommended Reading: bit.ly/agGufn</h4>
+		  <p><a href="http://www.brucelawson.co.uk/2010/html5-articles-and-sections-whats-the-difference/">Bruce Lawson - HTML5 articles and sections: what’s the difference?</a></p>
+	  </article>
+	  <article class="fill">
+		  <img src="images/sectioning-flowchart.png" />
+	  </article>
+	  <article>
+		  <h3> Figure &amp; Figcaption</h3>
+		 <pre>
+&lt;figure&gt;
+  &lt;img src=&quot;images/bley.jpg&quot; /&gt;
+  &lt;figcaption&gt;Paul Bley Trio ESP-Disk 1021, 1966&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre>
+		  <figure>
+			  <img src="images/bley.jpg" />
+			  <figcaption>Paul Bley Trio ESP-Disk 1021, 1966</figcaption>
+		 </figure>
+
+	  </article>
+	  <article>
+		  <h3>Audio</h3>
+		  <pre>
+&lt;audio controls preload=&quot;auto&quot; autobuffer&gt; 
+  &lt;source src=&quot;audio/honeycombs.mp3&quot; /&gt;
+  &lt;source src=&quot;audio/honeycombs.ogg&quot; /&gt;
+  &lt;!-- now include flash fall back --&gt;
+&lt;/audio&gt;
+</pre>
+		  <audio controls preload="auto"> 
+		    <source src="media/honeycombs.mp3" />
+		    <source src="media/honeycombs.ogg" />
+		    <!-- now include flash fall back -->
+		  </audio>
+		  <p>&ldquo;Honeycombs&rdquo; by <a href="http://zsammy.com">Zsammy</a></p>
+	  </article>
+	  <article>
+		  <h3>Audio Attributes</h3>
+		  <ul>
+			  <li>autoplay</li>
+			  <li>controls</li>
+			  <li>loop</li>
+			  <li>preload</li>
+		  </ul>
+	  </article>
+	  
+	  <article>
+		  <h3>Video</h3>
+		  <pre>
+&lt;video controls&gt;
+  &lt;source src=&quot;media/marble.m4v&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;source src=&quot;media/marble.ogv&quot; type=&quot;video/ogg&quot; /&gt;
+  Video tag not supported.
+  Download the video &lt;a href=&quot;resources/marble.m4v&quot;&gt;here&lt;/a&gt;.
+&lt;/video&gt;</pre>
+	  		
+			
+  	  	<video controls>
+  	      <source src="media/marble.m4v" type="video/mp4" />
+  		  <source src="media/marble.ogv" type="video/ogg" />
+  		Video tag not supported. Download the video <a href="resources/marble.m4v">here</a>.
+  		</video>
+	  </article>
+	  <article>
+		  <h3>Video Attributes</h3>
+		  <ul>
+			  <li>autoplay</li>
+			  <li>controls</li>
+			  <li>height</li>
+			  <li>width</li>
+			  <li>loop</li>
+			  <li>muted</li>
+			  <li>poster</li>
+			  <li>preload</li>
+		  </ul>
+	  </article>
+	  
+	  <article>
+		  <h3> Other Elements (1)</h3>
+			  <h4>mark<h4>
+				  <pre>&lt;mark&gt;This text is contained within the mark element&lt;/mark&gt;</pre>
+				  <mark>This text is contained within the mark element</mark>
+				  <hr />
+			  <h4>time</h4>
+			  <pre>&lt;time datetime=&quot;2012-02-16&quot;&gt;February 16&lt;/time&gt;</pre>
+			  <time datetime="2012-02-16">February 16</time>
+	  </article>
+	  <article>
+		  <h3> Other Elements (2)</h3>
+ 			  <h4>meter</h4>
+			  <pre>&lt;meter value=&quot;90&quot; min=&quot;0&quot; max=&quot;100&quot; optimum=&quot;100&quot;&gt;A-&lt;/meter&gt;</pre>
+ 			  <p>Your grade is: <meter value="90" min="0" max="100" optimum="100">A-</meter></p>
+ 			  <hr />
+ 			  <h4>progress</h4>
+			  <pre>&lt;progress value=&quot;250&quot; max=&quot;1000&quot;&gt;25%&lt;/progress&gt;</pre>
+ 		 <progress value="250" max="1000">25%</progress>
+		  
+	  </article>
+	  <article>
+		  <h1>New Form Controls</h1>
+	  </article>	
+	  <article>
+		  <h3>Form Controls</h3>
+		  <ul>
+			  <li>datetime</li>
+	  		  <li>datetime-local</li>
+			  <li>number</li>
+			  <li>range</li>
+			  <li>email</li>
+			  <li>url</li>
+			  <li>color</li>
+		  </ul>
+		</article>
+		<article>
+			<h3><a href="form.html">Demo Form</a></h3>
+<pre><small>&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;Full Name&quot; autofocus required&gt;
+ 	   
+&lt;label for=&quot;email&quot;&gt;E-mail&lt;/label&gt;
+&lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;name@example.com&quot; required&gt;
+ 
+&lt;label for=&quot;phone&quot;&gt;Phone&lt;/label&gt;
+&lt;input type=&quot;tel&quot; name=&quot;phone&quot; id=&quot;phone&quot; placeholder=&quot;ex. (555) 555-5555&quot;&gt;
+ 
+&lt;label for=&quot;website&quot;&gt;Website&lt;/label&gt;
+&lt;input type=&quot;url&quot; name=&quot;url&quot; id=&quot;website&quot; placeholder=&quot;http://&quot;&gt;
+		
+&lt;label for=&quot;amount&quot;&gt;How much?&lt;/label&gt;
+&lt;input type=&quot;range&quot; id=&quot;amount&quot; name=&quot;amount&quot;&gt;
+ 
+&lt;label for=&quot;dstart&quot;&gt;Start date&lt;/label&gt;
+&lt;input type=&quot;date&quot; id=&quot;dstart&quot; name=&quot;dstart&quot;&gt;</small></pre>
+		</article>		
+		<article>
+			<h3>HTML5 Forms Mobile (1)</h3>
+			<p><img src="images/iphone_form1.jpg" /></p>
+		</article>
+		<article>
+			<h3>HTML5 Forms Mobile (2)</h3>
+			<p><img src="images/iphone_form2.jpg" /></p>
+		</article>
+		<article>
+			<h1>New APIs</h1>
+		</article>
+		<article>
+			<h3>API Features</h3>
+			<ul>
+				<li>Offline access/local storage</li>
+				<li>Canvas</li>
+				<li>History</li>
+				<li>User interaction</li>
+				<li>Drag &amp; drop</li>
+				<li>Media (audio &amp; video)</li>
+			</ul>
+			<hr />
+			<h4>HTML5 Demos: </h4>
+			<p><a href="http://html5demos.com/">html5demos.com</a></p>
+		</article>
+		<article>
+			<h1>Tools &amp; Resources </h1>
+		</article>
+		<article>
+			<h3>Browser Support</h3>
+			<ul>
+				<li><strong>HTML5 Please: </strong><a href="http://html5please.us">html5please.us</a></li>
+				<li><strong>HTML5 Test: </strong><a href="http://html5test.com">html5test.com</a></li>
+				<li><strong>HTML5 Readiness: </strong><a href="http://html5readiness.com">html5readiness.com</a></li>
+				<li><strong>Browser Support Chart: </strong> <a href="http://findmebyip.com/litmus">findmebyip.com/litmus</a></li>
+			</ul>
+		</article>
+		
+		<article>
+			<h3>Tools</h3>
+			<ul>
+				<li><strong>Modernizr: </strong><a href="http://www.modernizr.com/">modernizr.com</a></li>
+				<li><strong>HTML5 Shiv: </strong><a href="http://code.google.com/p/html5shiv/">code.google.com/p/html5shiv/</a></li>
+				<li><strong>HTML5 Validator: </strong><a href="http://validator.nu/">validator.nu</a></li>
+				<li><strong>HTML Lint: </strong><a href="http://lint.brihten.com/html/">lint.brihten.com/html</a></li>
+				<li><strong>HTML5 Docotor Element Flowchart: </strong><a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png">html5doctor.com/downloads/h5d-sectioning-flowchart.png</a></li>
+				<li><strong>Media.io: </strong><a href="http://media.io/">media.io</a></li>
+				<li><strong>ffmpeg2theora: </strong><a href="http://v2v.cc/~j/ffmpeg2theora/">v2v.cc/~j/ffmpeg2theora/</a></li>
+				</ul>
+		</article>
+		<article>
+			<h3>Templates/Frameworks</h3>
+			<ul>
+				<li><strong>HTML5 Boilerplate: </strong><a href="http://html5boilerplate.com/">html5boilerplate.com</a></li>
+				<li><strong>HTML5 Reset: </strong><a href="http://html5reset.org/">html5reset.org</a></li>
+				<li><strong>Initializer: </strong><a href="http://www.initializr.com/">initializr.com</a></li>
+			</ul>
+		</article>
+		<article>
+			<h3>Resources</h3>
+			<ul>
+				<li><strong>Dive Into HTML5: </strong><a href="http://diveintohtml5.info/">diveintohtml5.info</a></li>
+				<li><strong>HTML5 Rocks: </strong><a href="http://www.html5rocks.com">html5rocks.com</a></li>
+				<li><strong>HTML5 for Web Developers: </strong>  <a href="http://developers.whatwg.org">developers.whatwg.org</a></li>
+				<li><strong>Bruce Lawson HTML5 Posts: </strong><a href="http://www.brucelawson.co.uk/category/accessibility-web-standards/html5/">brucelawson.co.uk/category/accessibility-web-standards/html5/</a></li>
+				<li><strong>HTML5 Doctor: </strong><a href="http://html5doctor.com">html5doctor.com</a></li>
+				<li><strong>HTML5 Laboratory: </strong><a href="http://www.html5laboratory.com">html5laboratory.com</a></li>
+				<li><strong>The developer's guide to HTML5 APIs: </strong><a href="http://www.netmagazine.com/features/developer-s-guide-html5-apis">netmagazine.com/features/developer-s-guide-html5-apis</a></li>
+			</ul>
+		</article>
+		<article>
+			<h3>Demos</h3>
+			<ul>
+				<li><strong>HTML5 Demos: </strong><a href="http://html5demos.com/">html5demos.com</a></li>
+				<li><strong>Apple HTML5 Demos: </strong><a href="http://www.apple.com/html5/">apple.com/html5</a></li>
+				<li><strong>HTML5 Gallery: </strong><a href="http://html5gallery.com/">html5gallery.com</a></li>
+			</ul>
+		</article>
+		<article>
+			<h3>On your own</h3>
+			<h4>Beginners</h4>
+			<p>Open a text editor and structure an HTML5 document. Use the demo HTML5 file as a reference.</p>
+			<br />
+			<h4>Intermediate</h4>
+			<p>Download the HTML5 Boilerplate files (or Initalizr) and layout a typical blog using the new HTML5 elements.</p>
+			<br />
+			<h4>Advanced</h4>
+			<p>Go crazy! (or help out a beginner)</p>
+		
+	  	
+	  
+  </body>
+</html>
+    
